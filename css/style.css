@@ -1,3 +1,6 @@
+:root{
+    --gray:#676a6f;
+}
 /* regole generali */
 *{
     margin: 0;
@@ -14,7 +17,16 @@
     clear: both;
     display: table;
 }
-/* regole main */
+
+.title{
+    color: #fff;
+}
+
+.suggestion::after{
+    content: "Più ascolti, più accurati saranno suggerimenti.";
+    color: var(--gray);
+}
+/**************************************** regole main */
 
 main{
     height: calc(100% - 90px);
@@ -33,12 +45,63 @@ main{
     width: calc(100% - 230px);
     height: calc(100vh - 90px);
     overflow-y: scroll;
+    padding: 1rem;
 }
+
+/* regole calltoact */
+
+.calltoact{
+    height: 90px;
+    width: calc(100% - 230px);
+    position: fixed;
+    top: 0;
+    left: 230px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*  regole barra di navigazione */
+
+#lists nav{
+    margin-top:90px;
+    margin-bottom: 3rem;
+}
+
+#lists nav ul{
+    list-style: none;
+    color: var(--gray);
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+#lists nav li{
+    margin: 0 1rem;
+}
+
+/* regole recent */
 
 /* regole playlists */
 
 .playlist{
+    padding: 0.5rem;
     width: calc(100% / 6);
+    text-align: center; 
+}
+
+/* regole di pl-image */
+
+.pl-image img{
+   width: 100%;
+   display: block;
+}
+
+/* regole sottotitoli playlist */
+
+.pl-text p{
+    color: var(--gray);
 }
 
 /* regole footer */
@@ -47,7 +110,7 @@ footer{
     height: 90px;
 }
 
-/* regole di debug */
+/************************************* regole di debug */
 
 nav{
     height: 60px;
@@ -61,8 +124,4 @@ footer{
     background-color: black;
 } 
 
-.playlist{
-    height: 400px;
-    background-color: aqua;
-    border: solid 1px red;
-}
+
