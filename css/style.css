@@ -56,10 +56,25 @@ main{
     position: fixed;
     top: 0;
     left: 230px;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
+}   
+
+#lists .calltoact span{
+    display: inline-block;
+    border: solid 1px #fff;
+    border-radius: 2rem;
+    padding: 0.6rem 2.5rem;
+    position: absolute;
+    top: calc(45px - 1.2rem - 2px);
+    right: 24px;
 }
 
-
+#lists .calltoact a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #fff;
+}
 
 /*  regole barra di navigazione */
 
@@ -108,17 +123,11 @@ main{
 
 footer{
     height: 90px;
+    background-color: #282828;
 }
 
 /************************************* regole di debug */
 
-nav{
-    height: 60px;
-}
-
-footer{
-    background-color: blue;
-}
 
 #sidebar{
     background-color: black;
