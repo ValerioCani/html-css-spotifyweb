@@ -8,6 +8,9 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: helvetica,arial,sans-serif;
+}
 .float-l{
     float: left;
 }
@@ -124,8 +127,42 @@ main{
 footer{
     height: 90px;
     background-color: #282828;
+    display: flex;
+    justify-content: space-between;
+}
+#player{
+    width: calc(100% / 3);
+    text-align: center;
 }
 
+#player .controls{
+    padding:0.8rem 0 1rem;
+}
+footer #player i{
+    margin: 0 0.8rem;
+}
+
+footer #player .fa-play{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 24px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+}
+
+#player .timer span{
+    font-size: 0.6rem;
+}
+
+#player .bar{
+    display: inline-block;
+    width: 80%;
+    border: solid #5a5a5a 2px;
+    border-radius: 4px;
+    margin: 0 1.5rem;
+}
 /************************************* regole di debug */
 
 
