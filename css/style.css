@@ -1,0 +1,68 @@
+/* regole generali */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.float-l{
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+/* regole main */
+
+main{
+    height: calc(100% - 90px);
+    display: flex;
+}
+/* regole sidebar */
+
+#sidebar{
+    width: 230px;
+}   
+
+/* regole lists */
+
+#lists{
+    background-color: #141922;
+    width: calc(100% - 230px);
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+}
+
+/* regole playlists */
+
+.playlist{
+    width: calc(100% / 6);
+}
+
+/* regole footer */
+
+footer{
+    height: 90px;
+}
+
+/* regole di debug */
+
+nav{
+    height: 60px;
+}
+
+footer{
+    background-color: blue;
+}
+
+#sidebar{
+    background-color: black;
+} 
+
+.playlist{
+    height: 400px;
+    background-color: aqua;
+    border: solid 1px red;
+}
