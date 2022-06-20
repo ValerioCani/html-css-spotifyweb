@@ -9,8 +9,61 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body>
+
         <main>
-            <section id="sidebar"></section>
+
+            <section id="sidebar">
+                <div class="container-side user-tools">
+                    <img src="img/logo.svg" alt="logo Spotify"> 
+                    <div>
+                        <img src="img/home.svg" alt="home">
+                        <p>Home</p>
+                    </div>
+                    <div>
+                        <img src="img/search.svg" alt="search">
+                        <p>Cerca</p>
+                    </div>
+                    <div>
+                        <img src="img/libreria.svg" alt="libraries">
+                        <p>La tua Libreria</p>
+                    </div>
+                </div> 
+
+                <div class="container-side playlist-list">
+                    <h4>PLAYLIST</h4>
+                   
+                    <div class="crea-playlist">
+                        <span><i class="fa-solid fa-plus"></i></span></i>
+                        <p>Crea Playlist</p>
+                    </div>
+    
+                    <p>Nome Playlist</p>
+    
+                    <p>Nome Playlist</p>
+    
+                    <p>Nome Playlist</p>
+    
+                    <p>Nome Playlist</p>
+    
+                    <p>Nome Playlist</p>
+    
+                    <p>Nome Playlist</p>
+    
+                    <p>Nome Playlist</p>
+                </div>
+
+                <div class="profile ">
+                    <div id="install">
+                        <span><i class="fa-solid fa-arrow-down"></i></span>
+                        <p>Installa app</p>
+                    </div>
+                    <div id="user">
+                        <span><img src="img/profile.svg" alt="profile photo"></span>
+                        <p>Jhon Doe</p>
+                    </div>
+                </div>
+            </section>
+
             <section id="lists">
                 <div class="calltoact">
                     <span><a href="#">EFFETTUA L'UPGRADE</a></span>
@@ -33,7 +86,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                     <div class="playlist float-l">
@@ -42,7 +95,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                     <div class="playlist float-l">
@@ -51,7 +104,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                     <div class="playlist float-l">
@@ -60,7 +113,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                     <div class="playlist float-l">
@@ -69,7 +122,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                     <div class="playlist float-l">
@@ -78,7 +131,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                 </div>
@@ -91,7 +144,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                     <div class="playlist float-l">
@@ -100,7 +153,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +165,7 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                     <div class="playlist float-l">
@@ -121,14 +174,28 @@
                         </div>
                         <div class="pl-text">
                             <h3 class="title">Heavy Metal</h3>
-                            <p>subtitle</p>
+                            <p class="subtitle">subtitle</p>
                         </div>
                     </div>
                 </div>
             </section>
+
         </main>
+
         <footer>
-            <div></div>
+            <div id="album">
+                <section class="album-img">
+                    <img src="img/sinister.jpeg" alt="album sinister">
+                </section>
+                <section class="album-name">
+                    <h2 class="title">Sinister</h2>
+                    <p class="subtitle">Brano Nome</p>
+                </section>
+                <section class="icons">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </section>
+            </div>
 
             <div id="player">
 
@@ -144,7 +211,10 @@
 
                     <span>0:25</span>
 
-                    <span class="bar"></span>
+                    <span class="bar total">
+                        <span class="bar partial">
+                        </span>
+                    </span>
 
                     <span>4:35</span>
 
@@ -152,7 +222,21 @@
 
             </div>
 
-            <div></div>
+            <div id="options">
+
+                <i class="fas fa-list"></i>
+
+                <i class="fas fa-desktop"></i>
+
+                <div class="title timer">
+                    <i class="fas fa-volume-up"></i>
+                    <span class="bar total">
+                        <span class="bar partial">
+                        </span>
+                    </span>
+                </div>
+
+            </div>
 
         </footer>
     </body>

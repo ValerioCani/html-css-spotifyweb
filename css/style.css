@@ -25,6 +25,10 @@ body{
     color: #fff;
 }
 
+.subtitle{
+    color: var(--gray);
+}
+
 .suggestion::after{
     content: "Più ascolti, più accurati saranno suggerimenti.";
     color: var(--gray);
@@ -39,8 +43,100 @@ main{
 
 #sidebar{
     width: 230px;
-}   
+    color: var(--gray);
+    background-color: black;
+    padding: 1.5rem 1.5rem 00.3rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+} 
 
+#sidebar .container-side{
+    margin-bottom: 1rem;
+}
+
+#sidebar .container-side>img{
+    width: 60%;
+    margin-bottom: 1.5rem;
+}
+#sidebar .container-side>*{
+    margin-bottom: 0.8rem;
+}
+
+#sidebar div div img{
+    width: 25px;
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+#sidebar .container-side div p{
+    display: inline;
+    vertical-align: middle;
+    font-size: 0.8rem;
+}
+
+#sidebar h4{
+    font-size: 0.7rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+#sidebar .crea-playlist span{
+    display: inline-block;
+    color:black;
+    font-weight: 900;
+    background-color: var(--gray);
+    padding: 0.3rem 0.5rem;
+}
+
+#sidebar p{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+#sidebar .profile{
+    margin-top: auto;
+}
+
+#sidebar .profile #install{
+    border-bottom: solid 1px var(--gray);
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+#sidebar .profile #install span{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.5rem;
+    border: solid 1px #fff;
+    border-radius: 1rem;
+}
+
+#sidebar .profile #install p{
+    display: inline-block;
+}
+
+#sidebar .profile #user{
+    color: #fff;
+}
+
+#sidebar .profile #user span{
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    text-align: center;
+    overflow: hidden;
+    background-color: var(--gray);
+    border-radius: 4rem;
+    vertical-align: middle;
+}
+
+#sidebar .profile #user p{
+    display: inline-block;
+    vertical-align: middle;
+}
 /* regole lists */
 
 #lists{
@@ -116,12 +212,6 @@ main{
    display: block;
 }
 
-/* regole sottotitoli playlist */
-
-.pl-text p{
-    color: var(--gray);
-}
-
 /* regole footer */
 
 footer{
@@ -130,6 +220,50 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
+/* regole sezione album */
+
+#album{
+    display:flex;
+    margin: 22px 0rem 26px 0.5rem;
+    align-items: center;
+    align-content:unset;
+}
+
+#album .album-img{
+    width: 42px;
+    margin-right: 0.5rem;
+}
+
+#album .album-img img{
+    width: 100%;
+    font-weight: 900;
+}
+
+#album .album-name{
+    margin-right: 2rem;
+}
+
+#album .album-name h2{
+    font-size: 0.7rem;
+}
+
+#album .album-name p{
+    font-size: 0.6rem;
+    font-weight: 900;
+}
+
+#album .icons{
+    color: var(--gray);
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+#album .icons *{
+    margin-right: 0.5rem;
+}
+/* regole sezione player */
+
 #player{
     width: calc(100% / 3);
     text-align: center;
@@ -156,18 +290,58 @@ footer #player .fa-play{
     font-size: 0.6rem;
 }
 
-#player .bar{
+footer .bar{
     display: inline-block;
-    width: 80%;
-    border: solid #5a5a5a 2px;
     border-radius: 4px;
+}
+
+#player .total{
+    position: relative;
+    width: 78%;
+    border: solid #5a5a5a 2px;
     margin: 0 1.5rem;
 }
+
+#player .partial{
+    width: 30%;
+    border: solid #adadad 2px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    overflow: visible;
+}
+
+/* regole sezione options */
+#options{
+    display: flex;
+    color: #adadad;
+    font-size: 0.7rem;
+    align-items: center;
+}
+
+#options i{
+    margin-left: 1rem;
+}
+#options .total{
+    position: relative;
+    width: 118px;
+    height: 0;
+    border: solid #5a5a5a 2px;
+    margin: 0 0.5rem;
+}
+
+#options .partial{
+    width: 30%;
+    border: solid #adadad 2px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    overflow: visible;
+}
+
 /************************************* regole di debug */
 
 
-#sidebar{
-    background-color: black;
-} 
+
 
 
