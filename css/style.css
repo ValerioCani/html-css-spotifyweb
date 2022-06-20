@@ -21,7 +21,7 @@ body{
     display: table;
 }
 
-.title{
+.fffont{
     color: #fff;
 }
 
@@ -32,6 +32,94 @@ body{
 .suggestion::after{
     content: "Più ascolti, più accurati saranno suggerimenti.";
     color: var(--gray);
+}
+
+/* regolr di hover */
+
+#sidebar a:hover, #sidebar .user-tools a:hover, #sidebar .crea-playlist a:hover, 
+#lists nav li:hover a, #sidebar .crea-playlist button:hover + a, #album .fa-regular:hover{
+    color: #fff;
+}
+
+#album .subtitle a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
+#sidebar .crea-playlist button:hover{
+    background-color: #fff;
+}
+
+#lists .calltoact span:hover a{
+    font-size: 1rem;
+}
+
+#lists .calltoact span:hover{
+    padding: 0.8rem 2.5rem; 
+    top: calc(45px - 1.4rem - 2px);
+}
+
+.pl-image img:hover{
+    filter: brightness(0.5);
+}
+
+#lists .pl-image img:hover + .fa-play{
+    display: inline-block;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 24px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 14px);
+    left: calc(50% - 14px);
+}
+
+#lists .pl-image .fa-play:hover{
+    display: inline-block;
+    color: #fff;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    line-height: 24px;
+    border: solid 2px #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 14px);
+    left: calc(50% - 14px);
+    z-index: 999;
+}
+
+footer #player .fa-play:hover{
+    width: 30px;
+    height: 30px;
+    padding-top: 1px;
+}
+
+#player .total:hover  .fa-circle{
+    display: inline-block;
+    position: absolute;
+    color: #adadad;
+    right: -4px;
+    top: -4px;
+}
+
+#player .total:hover .partial{
+    border-color: #1eee4b;
+}
+
+#options .total:hover  .fa-circle{
+    display: inline-block;
+    position: absolute;
+    color: #adadad;
+    right: -4px;
+    top: -4px;
+}
+
+#options .total:hover .partial{
+    border-color: #1eee4b;
 }
 /**************************************** regole main */
 
@@ -50,6 +138,13 @@ main{
     flex-direction: column;
 } 
 
+#sidebar a{
+    text-decoration: none;
+    color: var(--gray);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
 #sidebar .container-side{
     margin-bottom: 1rem;
 }
@@ -58,6 +153,7 @@ main{
     width: 60%;
     margin-bottom: 1.5rem;
 }
+
 #sidebar .container-side>*{
     margin-bottom: 0.8rem;
 }
@@ -68,10 +164,11 @@ main{
     vertical-align: middle;
 }
 
-#sidebar .container-side div p{
-    display: inline;
+#sidebar .container-side div a{
     vertical-align: middle;
     font-size: 0.8rem;
+    text-decoration: none;
+    color: var(--gray);
 }
 
 #sidebar h4{
@@ -80,17 +177,12 @@ main{
     color: #fff;
 }
 
-#sidebar .crea-playlist span{
+#sidebar .crea-playlist button{
     display: inline-block;
     color:black;
     font-weight: 900;
     background-color: var(--gray);
     padding: 0.3rem 0.5rem;
-}
-
-#sidebar p{
-    font-size: 0.8rem;
-    font-weight: bold;
 }
 
 #sidebar .profile{
@@ -112,10 +204,11 @@ main{
     font-size: 0.5rem;
     border: solid 1px #fff;
     border-radius: 1rem;
+    vertical-align: middle;
 }
 
-#sidebar .profile #install p{
-    display: inline-block;
+#sidebar .profile #install span{
+    vertical-align: middle;
 }
 
 #sidebar .profile #user{
@@ -128,7 +221,6 @@ main{
     height: 1.6rem;
     text-align: center;
     overflow: hidden;
-    background-color: var(--gray);
     border-radius: 4rem;
     vertical-align: middle;
 }
@@ -184,7 +276,6 @@ main{
 
 #lists nav ul{
     list-style: none;
-    color: var(--gray);
     font-size: 0.8rem;
     font-weight: bold;
     display: flex;
@@ -195,10 +286,16 @@ main{
     margin: 0 1rem;
 }
 
-/* regole recent */
+#lists nav li a{
+    text-decoration: none;
+    color: var(--gray);
+}
 
 /* regole playlists */
 
+.clearfix{
+    margin-bottom: 3rem;
+}
 .playlist{
     padding: 0.5rem;
     width: calc(100% / 6);
@@ -207,11 +304,18 @@ main{
 
 /* regole di pl-image */
 
+.pl-image{
+    position: relative;
+}
+
 .pl-image img{
    width: 100%;
    display: block;
 }
 
+#lists .fa-play{
+    display: none;
+}
 /* regole footer */
 
 footer{
@@ -253,6 +357,11 @@ footer{
     font-weight: 900;
 }
 
+.subtitle a{
+    text-decoration: none;
+    color: var(--gray);
+}
+
 #album .icons{
     color: var(--gray);
     font-weight: 900;
@@ -270,12 +379,20 @@ footer{
 }
 
 #player .controls{
-    padding:0.8rem 0 1rem;
-}
-footer #player i{
-    margin: 0 0.8rem;
+    padding: 0.8rem 0rem;
 }
 
+footer #player .controls>i{
+    margin: 0 0.8rem;
+    vertical-align: middle;
+    line-height: 34px;
+}
+
+.play-btn{
+    display: inline-block;
+    width: 30px;
+    height: 30px;   
+}
 footer #player .fa-play{
     display: inline-block;
     width: 28px;
@@ -284,6 +401,7 @@ footer #player .fa-play{
     line-height: 24px;
     border: solid 2px #fff;
     border-radius: 50%;
+    vertical-align: middle;
 }
 
 #player .timer span{
@@ -298,8 +416,9 @@ footer .bar{
 #player .total{
     position: relative;
     width: 78%;
-    border: solid #5a5a5a 2px;
     margin: 0 1.5rem;
+    border: solid #5a5a5a 2px;
+    
 }
 
 #player .partial{
@@ -309,6 +428,10 @@ footer .bar{
     left: -2px;
     top: -2px;
     overflow: visible;
+}
+
+#player .partial .fa-circle{
+    display: none;
 }
 
 /* regole sezione options */
@@ -339,6 +462,9 @@ footer .bar{
     overflow: visible;
 }
 
+#options .partial .fa-circle{
+    display: none;
+}
 /************************************* regole di debug */
 
 
