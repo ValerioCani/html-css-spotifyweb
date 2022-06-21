@@ -1,5 +1,6 @@
 :root{
     --gray:#676a6f;
+    --white: #ffffff;
 }
 /* regole generali */
 *{
@@ -18,7 +19,7 @@ body{
 }
 
 .fffont{
-    color: #fff;
+    color: var(--white);
 }
 
 .subtitle{
@@ -30,20 +31,20 @@ body{
     color: var(--gray);
 }
 
-/* regolr di hover */
+/* regole di hover */
 
 #sidebar a:hover, #sidebar .playlist-list a:hover, #sidebar .user-tools a:hover, #sidebar .crea-playlist a:hover, 
 #lists nav li:hover a, #sidebar .crea-playlist button:hover + a, #album .fa-regular:hover{
-    color: #fff;
+    color: var(--white);
 }
 
 #album .subtitle a:hover{
-    color: #fff;
+    color: var(--white);
     text-decoration: underline;
 }
 
 #sidebar .crea-playlist button:hover{
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 #sidebar .user-tools>div:hover{
@@ -69,12 +70,12 @@ body{
 
 #lists .pl-image img:hover + .fa-play{
     display: inline-block;
-    color: #fff;
+    color: var(--white);
     width: 28px;
     height: 28px;
     text-align: center;
     line-height: 24px;
-    border: solid 2px #fff;
+    border: solid 2px var(--white);
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 14px);
@@ -83,12 +84,12 @@ body{
 
 #lists .pl-image .fa-play:hover{
     display: inline-block;
-    color: #fff;
+    color: var(--white);
     width: 28px;
     height: 28px;
     text-align: center;
     line-height: 24px;
-    border: solid 2px #fff;
+    border: solid 2px var(--white);
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 14px);
@@ -199,7 +200,7 @@ main{
 #sidebar h4{
     font-size: 0.7rem;
     font-weight: 900;
-    color: #fff;
+    color: var(--white);
 }
 
 #sidebar .crea-playlist button{
@@ -227,9 +228,9 @@ main{
     width: 12px;
     height: 12px;
     text-align: center;
-    color: #fff;
+    color: var(--white);
     font-size: 0.5rem;
-    border: solid 1px #fff;
+    border: solid 1px var(--white);
     border-radius: 1rem;
     vertical-align: middle;
 }
@@ -239,7 +240,7 @@ main{
 }
 
 #sidebar .profile #user{
-    color: #fff;
+    color: var(--white);
 }
 
 #sidebar .profile #user span{
@@ -281,7 +282,7 @@ main{
 
 #lists .calltoact span{
     display: inline-block;
-    border: solid 1px #fff;
+    border: solid 1px var(--white);
     border-radius: 2rem;
     padding: 0.6rem 2.5rem;
     position: absolute;
@@ -293,7 +294,7 @@ main{
     text-decoration: none;
     font-size: 0.8rem;
     font-weight: bold;
-    color: #fff;
+    color: var(--white);
 }
 
 /*  regole barra di navigazione */
@@ -439,7 +440,7 @@ footer #player .fa-play{
     height: 28px;
     text-align: center;
     line-height: 24px;
-    border: solid 2px #fff;
+    border: solid 2px var(--white);
     border-radius: 50%;
     vertical-align: middle;
 }
@@ -589,9 +590,9 @@ footer .bar{
         width: 12px;
         height: 12px;
         text-align: center;
-        color: #fff;
+        color: var(--white);
         font-size: 0.5rem;
-        border: solid 1px #fff;
+        border: solid 1px var(--white);
         border-radius: 1rem;
         margin: 0px 9px 1rem 9px;
     }
