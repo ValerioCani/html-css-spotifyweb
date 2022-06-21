@@ -18,6 +18,10 @@ body{
     flex-wrap: wrap;
 }
 
+main, #sidebar, #sidebar .side-playlist, footer, #album, #player .timer
+, #options, #options .volume, #sidebar-s{
+    display:flex;
+}
 .fffont{
     color: var(--white);
 }
@@ -29,6 +33,9 @@ body{
 .suggestion::after{
     content: "Più ascolti, più accurati saranno suggerimenti.";
     color: var(--gray);
+    font-size: 0.7rem;
+    font-weight: bold;
+    
 }
 
 /* regole di hover */
@@ -130,7 +137,6 @@ footer #player .fa-play:hover{
 
 main{
     height: calc(100% - 90px);
-    display: flex;
 }
 /* regole sidebar */
 
@@ -139,7 +145,6 @@ main{
     width: 230px;
     color: var(--gray);
     background-color: black;
-    display: flex;
     flex-direction: column;
     overflow: hidden;
 } 
@@ -169,7 +174,6 @@ main{
 }
 
 #sidebar .side-playlist{
-    display: flex;
     flex-direction: column;
     overflow-y: hidden;
 }
@@ -307,9 +311,7 @@ main{
     list-style: none;
     font-size: 0.8rem;
     font-weight: bold;
-    display: flex;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 #lists nav li{
@@ -341,6 +343,7 @@ main{
 
 .pl-image{
     position: relative;
+    margin: 1rem 0rem;
 }
 
 .pl-image img{
@@ -351,12 +354,16 @@ main{
 #lists .fa-play{
     display: none;
 }
+
+#lists .pl-text p{
+    font-size: 0.7rem;
+    font-weight: bold;
+}
 /* regole footer */
 
 footer{
     height: 90px;
     background-color: #282828;
-    display: flex;
     justify-content: space-between;
     z-index: 999;
 }
@@ -368,7 +375,6 @@ footer{
 /* regole sezione album */
 
 #album{
-    display:flex;
     margin: 22px 0rem 26px 0.5rem;
     align-items: center;
     align-content:unset;
@@ -446,7 +452,6 @@ footer #player .fa-play{
 }
 
 #player .timer{
-    display: flex;
     width: 100%;
     align-items: center;
 }
@@ -484,7 +489,6 @@ footer .bar{
 
 /* regole sezione options */
 #options{
-    display: flex;
     justify-content: flex-end;
     color: #adadad;
     font-size: 0.7rem;
@@ -497,7 +501,6 @@ footer .bar{
 }
 
 #options .volume{
-    display:flex;
     justify-content: flex-end;
     align-items: center;
     width: calc(100% - 112px);
@@ -579,8 +582,6 @@ footer .bar{
         width: 50px;
         background-color: black;
         padding: 0.3rem 0.6rem 0.3rem;
-        flex-direction: column;
-        display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
