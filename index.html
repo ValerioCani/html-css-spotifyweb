@@ -15,15 +15,15 @@
             <section id="sidebar">
                 <div class="container-side user-tools">
                     <img src="img/logo.svg" alt="logo Spotify"> 
-                    <div>
+                    <div class="tools">
                         <img src="img/home.svg" alt="home">
                         <a href="#" >Home</a>
                     </div>
-                    <div>
+                    <div class="tools">
                         <img src="img/search.svg" alt="search">
                         <a href="#">Cerca</a>
                     </div>
-                    <div>
+                    <div class="tools">
                         <img src="img/libreria.svg" alt="libraries">
                         <a href="#">La tua Libreria</a>
                     </div>
@@ -94,121 +94,135 @@
                 </div>
                 <nav>
                     <ul>
-                        <li><span><a href="#">IN EVIDENZA</a></span></li>
-                        <li><span><a href="#">IN EVIDENZA</a></span></li>
-                        <li><span><a href="#">IN EVIDENZA</a></span></li>
-                        <li><span><a href="#">IN EVIDENZA</a></span></li>
-                        <li><span><a href="#">IN EVIDENZA</a></span></li>
-                        <li><span><a href="#">IN EVIDENZA</a></span></li>
+                        <li><span><a href="#">IN EVIDENZA</a></span>
+                            <div class="overglow"></div>
+                        </li>
+                        <li><span><a href="#">PODCAST</a></span>
+                            <div class="overglow"></div></li>
+                        <li><span><a href="#">CLASSIFICHE</a></span>
+                            <div class="overglow"></div>
+                        </li>
+                        <li><span><a href="#">GENERI E MOOD</a></span>
+                            <div class="overglow"></div>
+                        </li>
+                        <li><span><a href="#">NUOVE USCITE</a></span>
+                            <div class="overglow"></div>
+                        </li>
+                        <li><span><a href="#">SCOPRI</a></span>
+                            <div class="overglow"></div>
+                        </li>
                     </ul>
                 </nav>
-                <div id="recent" class="clearfix">
+                <div id="recent">
                     <div class="fffont"><h2>Recently played</h2></div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
+                    <div class="flex-w">
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/metal_lifting.jpg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Heavy Metal</h3>
+                                <p class="subtitle">subtitle</p>
+                            </div>
                         </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/stranger.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                                <p class="subtitle">Kyle Dixon & Michael Stein</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/aquietplace.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">A quiet place</h3>
+                                <p class="subtitle">subtitle</p>
+                            </div>
                         </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/split.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Split</h3>
+                                <p class="subtitle">subtitle</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/cure.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">A cure for wellness</h3>
+                                <p class="subtitle">subtitle</p>
+                            </div>
                         </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
-                        </div>
-                    </div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
-                        </div>
-                    </div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
-                        </div>
-                    </div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/sinister.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Sinister</h3>
+                                <p class="subtitle">subtitle</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="foryou" class="clearfix">
+                <div id="foryou">
                     <div class="fffont suggestion"><h2>Creato per Jhon Doe</h2></div>
-                    <div></div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
+                    <div class="flex-w">
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/radar.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Release Radar</h3>
+                            </div>
                         </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
-                        </div>
-                    </div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/mixdaily.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Daily Mix 1</h3>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div id="artist" class="clearfix">
+                <div id="artist">
                     <div class="fffont suggestion"><h2>Artisti più popolari</h2></div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
+                    <div class="flex-w">
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/youg.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Heavy Metal</h3>
+                                <p class="subtitle">subtitle</p>
+                            </div>
                         </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
-                        </div>
-                    </div>
-                    <div class="playlist float-l">
-                        <div class="pl-image">
-                            <img src="img/metal_lifting.jpg" alt="">
-                            <i class="fas fa-play"></i>
-                        </div>
-                        <div class="pl-text">
-                            <h3 class="fffont">Heavy Metal</h3>
-                            <p class="subtitle">subtitle</p>
+                        <div class="playlist">
+                            <div class="pl-image">
+                                <img src="img/einaudi.jpeg" alt="">
+                                <i class="fas fa-play"></i>
+                            </div>
+                            <div class="pl-text">
+                                <h3 class="fffont">Heavy Metal</h3>
+                                <p class="subtitle">subtitle</p>
+                            </div>
                         </div>
                     </div>
                 </div>
